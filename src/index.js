@@ -1,1 +1,3 @@
-console.log("This is my restaurant page setup");
+import "./style.css";
+import { test } from "./home.js";
+test();
