@@ -10,13 +10,15 @@ module.exports = {
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Restaurant Project",
+      template: "./src/index.html",
     }),
   ],
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    assetModuleFilename: "[name][ext]",
   },
   module: {
     rules: [
@@ -26,6 +28,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
     ],
