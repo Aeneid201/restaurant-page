@@ -20,7 +20,6 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
-    "mustache": "^4.2.0"
+    "bootstrap": "^5.2.2"
   }
 }
